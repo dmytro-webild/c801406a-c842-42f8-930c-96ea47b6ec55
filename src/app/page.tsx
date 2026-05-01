@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import FaqBase from '@/components/sections/faq/FaqBase';
+import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
@@ -11,7 +11,7 @@ import MediaAbout from '@/components/sections/about/MediaAbout';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TeamCardOne from '@/components/sections/team/TeamCardOne';
-import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
+import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import { Award, Smile, Star } from "lucide-react";
 
 export default function LandingPage() {
@@ -134,34 +134,17 @@ export default function LandingPage() {
   </div>
 
   <div id="testimonials" data-section="testimonials">
-      <TestimonialCardSixteen
+      <TestimonialCardTwo
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
       testimonials={[
         {
-          id: "1",          name: "Anonymous",          role: "Patient",          company: "Local",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-dark-skinned-male-with-afro-hairstyle-keeps-hand-head-laughs-as-has-fun_273609-8514.jpg"},
+          id: "1",          name: "Anonymous",          role: "Patient",          testimonial: "Fantastic service and very professional staff.",          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-dark-skinned-male-with-afro-hairstyle-keeps-hand-head-laughs-as-has-fun_273609-8514.jpg"},
         {
-          id: "2",          name: "Asad Javed",          role: "Patient",          company: "Local",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/outdoor-view-happy-lovely-young-female-fitness-trainer-prepares-master-class-involved-active-training-likes-going-sport-better-vitality-flexibility-active-lifestyle_273609-2200.jpg"},
+          id: "2",          name: "Asad Javed",          role: "Patient",          testimonial: "Very satisfied with my dental treatment.",          imageSrc: "http://img.b2bpic.net/free-photo/outdoor-view-happy-lovely-young-female-fitness-trainer-prepares-master-class-involved-active-training-likes-going-sport-better-vitality-flexibility-active-lifestyle_273609-2200.jpg"},
         {
-          id: "3",          name: "Engineer Hamza",          role: "Patient",          company: "Local",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/smiling-ethnic-male-with-curly-hair-evening_23-2148203737.jpg"},
-        {
-          id: "4",          name: "Patient 4",          role: "Patient",          company: "Local",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/cheerful-young-lady-tilts-head-has-foxy-hair-rejoices-something-positive-wears-casual-clothes-isolated-white-wall-free-space-left-side-your-promotion-advert_273609-29465.jpg"},
-        {
-          id: "5",          name: "Patient 5",          role: "Patient",          company: "Local",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-happy-smiling-young-woman-kitchen-cooking-chopping-zucchini-holding-vegetables_1258-197977.jpg"},
-      ]}
-      kpiItems={[
-        {
-          value: "5.0",          label: "Avg Rating"},
-        {
-          value: "100%",          label: "Recommended"},
-        {
-          value: "3",          label: "Recent Reviews"},
+          id: "3",          name: "Engineer Hamza",          role: "Patient",          testimonial: "Clean clinic and expert doctors.",          imageSrc: "http://img.b2bpic.net/free-photo/smiling-ethnic-male-with-curly-hair-evening_23-2148203737.jpg"},
       ]}
       title="What Our Patients Say"
       description="Patients trust our experience and professionalism."
@@ -169,7 +152,7 @@ export default function LandingPage() {
   </div>
 
   <div id="faq" data-section="faq">
-      <FaqBase
+      <FaqSplitMedia
       textboxLayout="default"
       useInvertedBackground={true}
       faqs={[
@@ -183,6 +166,8 @@ export default function LandingPage() {
       title="Frequently Asked Questions"
       description="Common inquiries about our dental services."
       faqsAnimation="slide-up"
+      mediaAnimation="slide-up"
+      imageSrc="http://img.b2bpic.net/free-photo/happy-female-dentist-pointing-teeth-x-ray-clinic_23-2147879289.jpg"
     />
   </div>
 
